@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    >
+    <RelativeLayout
+        android:id="@+id/music_list"
+        android:layout_width="match_parent"
+        android:layout_height="630dp"
+        android:layout_alignParentTop="true"
+    >
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="4dp"
+
+         />
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/music_sb"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="75dp"
+        />
+    <TextView
+        android:id="@+id/music_time_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="75dp"
+        android:layout_alignParentLeft="true"
+        android:text="00:00"/>
+    <TextView
+        android:id="@+id/music_time_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="75dp"
+        android:layout_alignParentRight="true"
+        android:text="00:00"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/music_bottom_layout"
+        android:background="#99EEEEEE"
+        >
+        <ImageView
+            android:id="@+id/music_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/icon"
+            android:layout_centerVertical="true"
+         />
+        <TextView
+            android:id="@+id/music_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="告白气球"
+            android:layout_toRightOf="@id/music_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            />
+        <ImageButton
+            android:id="@+id/music_next"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/music_next1"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageButton
+            android:id="@+id/music_start"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@id/music_next"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/music_start1"
+            android:layout_centerVertical="true"
+            />
+        <ImageButton
+            android:id="@+id/music_last"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@id/music_start"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/music_last1"
+
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
